@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Send Birthday Wishes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="form" class="card" autocomplete="off">
+    <h2>🎉 Send Birthday Wishes</h2>
+
+    <label for="name">Recipient's Name</label>
+    <input id="name" placeholder="Your name here" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" placeholder="Write your birthday wish..." required></textarea>
+
+    <label for="photo">Upload a Birthday Image</label>
+    <input type="file" id="photo" accept="image/*">
+
+    <label>Preview</label>
+    <div id="preview" class="fake-textarea"></div>
+
+    <button type="submit">Send Wish</button>
+    <div class="status" id="status"></div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
